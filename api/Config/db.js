@@ -6,6 +6,7 @@ const connectmongoDB = async () => {
 
     try{
       
+
         let connect = await mongoose.connect(process.env.MONGO_STRING)
         console.log(`MongoDB connect with Host ${connect.connection.host}`.bgCyan.black)
     }catch(error){
@@ -13,3 +14,4 @@ const connectmongoDB = async () => {
     }
 }
 export default connectmongoDB;
+//console.log
